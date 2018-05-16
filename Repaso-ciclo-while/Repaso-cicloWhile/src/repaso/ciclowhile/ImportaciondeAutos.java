@@ -35,9 +35,9 @@ public class ImportaciondeAutos {
         entrada.nextLine();
         while (contador <= limit) {
             /*Misma situación con el anterior, solo que en este código se especifica en el ingreso por teclado*/
-            System.out.println("Ingrese la marca del automovil " + contador + " (Llenar hasta tener 10 caracteres, si es necesario usar espacios)");
+            System.out.println("Ingrese la marca del automovil " + contador );
             marca = entrada.nextLine();
-            System.out.println("ingrese el origen(Ingrese hasta tener 9 caracteres, usar espacios si es necesario)");
+            System.out.println("ingrese el origen");
             origen = entrada.nextLine();
             System.out.println("Ingrese el costo del vehículo");
             costo = entrada.nextDouble();
@@ -46,11 +46,11 @@ public class ImportaciondeAutos {
                     impuesto = costo * 0.2;
                     countARG = countARG + 1;
                     break;
-                case "Colombia ":
+                case "Colombia":
                     impuesto = costo * 0.25;
                     countCol = countCol + 1;
                     break;
-                case "Chile    ":
+                case "Chile":
                     impuesto = costo * 0.3;
                     countChl = countChl + 1;
                     break;
@@ -64,7 +64,7 @@ public class ImportaciondeAutos {
             totalAutos = totalAutos + 1;
             totalImpuestos = totalImpuestos + impuesto;
             totalPV = totalPV + precioVenta;
-            cadenaFinal = String.format("%s%s\t%s\t%.0f\t\t%.0f\t\t%.0f\n", cadenaFinal, marca, origen, costo, impuesto, precioVenta);
+            cadenaFinal = String.format("%s%-10s\t%-9s\t%.0f\t\t%.0f\t\t%.0f\n", cadenaFinal, marca, origen, costo, impuesto, precioVenta);
             entrada.nextLine();
         }
         System.out.println(" ");

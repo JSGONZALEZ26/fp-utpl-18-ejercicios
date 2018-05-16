@@ -34,7 +34,7 @@ public class Facturacion {
         apellido = entrada.nextLine();
         while (conf) {
             /*Si se ingresa celular, se debe ingresar 4 espacios debido al tab*/
-            System.out.println("Ingrese el nombre del artículo a comprar(Si se escribe celular, agregar 4 espacios despues de la palabra)");
+            System.out.println("Ingrese el nombre del artículo a comprar");
             articulo = entrada.nextLine();
             System.out.println("Ingrese la cantidad a comprar");
             cantidad = entrada.nextInt();
@@ -43,7 +43,7 @@ public class Facturacion {
 
             double preciototal = precio * cantidad;
             suma = suma + preciototal;
-            cadenaFinal = String.format("%s%s\t%d\t\t%.1f\t\t%.1f\n", cadenaFinal, articulo, cantidad, precio, preciototal);
+            cadenaFinal = String.format("%s%-10s\t%d\t\t%.1f\t\t%.1f\n", cadenaFinal, articulo, cantidad, precio, preciototal);
             entrada.nextLine();
             System.out.println("¿Desea ingresar un nuevo producto? (no para salir)");
             String conf2 = entrada.nextLine();
@@ -61,7 +61,7 @@ public class Facturacion {
         System.out.println(" ");
         System.out.println(cadenaFinal);
         System.out.printf("\t\t\t\tSubtotal \t%.1f\n",suma);
-        System.out.printf("\t\t\t\tIVA 0.14 \t%.2f\n",iva);
+        System.out.printf("\t\t\t\tIVA 14%% \t%.2f\n",iva);
         System.out.printf("\t\t\t\tTotal \t\t%.2f\n",totalReal);
         
     }
