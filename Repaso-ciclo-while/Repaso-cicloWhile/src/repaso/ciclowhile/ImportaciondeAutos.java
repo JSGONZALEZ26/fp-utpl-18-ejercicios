@@ -34,7 +34,7 @@ public class ImportaciondeAutos {
         limit = entrada.nextInt();
         entrada.nextLine();
         while (contador <= limit) {
-            /*Misma situación con el anterior, solo que en este código se especifica en el ingreso por teclado*/
+           
             System.out.println("Ingrese la marca del automovil " + contador );
             marca = entrada.nextLine();
             System.out.println("ingrese el origen");

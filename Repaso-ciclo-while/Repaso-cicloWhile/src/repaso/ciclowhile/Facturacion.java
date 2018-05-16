@@ -33,7 +33,7 @@ public class Facturacion {
         System.out.println("Ingrese el apellido del cliente: ");
         apellido = entrada.nextLine();
         while (conf) {
-            /*Si se ingresa celular, se debe ingresar 4 espacios debido al tab*/
+           
             System.out.println("Ingrese el nombre del artículo a comprar");
             articulo = entrada.nextLine();
             System.out.println("Ingrese la cantidad a comprar");
