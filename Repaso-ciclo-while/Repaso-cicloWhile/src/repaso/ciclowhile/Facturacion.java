@@ -43,7 +43,7 @@ public class Facturacion {
 
             double preciototal = precio * cantidad;
             suma = suma + preciototal;
-            cadenaFinal = String.format("%s%-10s\t%d\t\t%.1f\t\t%.1f\n", cadenaFinal, articulo, cantidad, precio, preciototal);
+            cadenaFinal = String.format("%s%-12s\t%d\t\t%.1f\t\t%.1f\n", cadenaFinal, articulo, cantidad, precio, preciototal);
             entrada.nextLine();
             System.out.println("¿Desea ingresar un nuevo producto? (no para salir)");
             String conf2 = entrada.nextLine();

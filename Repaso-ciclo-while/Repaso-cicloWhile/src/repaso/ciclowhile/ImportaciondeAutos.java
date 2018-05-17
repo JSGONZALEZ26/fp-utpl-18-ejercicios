@@ -64,7 +64,7 @@ public class ImportaciondeAutos {
             totalAutos = totalAutos + 1;
             totalImpuestos = totalImpuestos + impuesto;
             totalPV = totalPV + precioVenta;
-            cadenaFinal = String.format("%s%-10s\t%-9s\t%.0f\t\t%.0f\t\t%.0f\n", cadenaFinal, marca, origen, costo, impuesto, precioVenta);
+            cadenaFinal = String.format("%s%-12s\t%-10s\t%.0f\t\t%.0f\t\t%.0f\n", cadenaFinal, marca, origen, costo, impuesto, precioVenta);
             entrada.nextLine();
         }
         System.out.println(" ");
